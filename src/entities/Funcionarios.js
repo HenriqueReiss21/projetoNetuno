@@ -1,5 +1,5 @@
-export default class Cliente{
-    constructor(codFuncionario, nome, cpf, rg, endereco, cep, cidade, estado, dataNascimento, dataCadastro, ativo, estadoCivil, numeroFilhos, pensão, função, setor, horario, salario, agencia, conta, cep, email){
+export default class Funcionarios{
+    constructor(codFuncionario, nome, cpf, rg, endereco, cep, cidade, estado, dataNascimento, dataCadastro, ativo, estadoCivil, numeroFilhos, pensao, funcao, setor, horario, salario, agencia, conta, cep, email){
         this.codFuncionario = codFuncionario,
         this.nome = nome,
         this.cpf = cpf,
@@ -13,8 +13,8 @@ export default class Cliente{
         this.ativo = ativo,
         this.estadoCivil = estadoCivil,
         this.numeroFilhos = numeroFilhos,
-        this.pensão = pensão,
-        this.função = função,
+        this.pensao = pensao,
+        this.funcao = funcao,
         this.setor = setor,
         this.horario = horario,
         this.salario = salario,
