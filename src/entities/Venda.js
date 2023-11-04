@@ -1,9 +1,9 @@
 export default class Venda{
-    constructor(codVenda, codCliente, codFuncionario, dtVenda, horaVenda){
+    constructor(codVenda, codCliente, codFuncionario, dataVenda, horaVenda){
         this.codVenda = codVenda,
         this.codCliente = codCliente,
         this.codFuncionario = codFuncionario,
-        this.dtVenda = dtVenda,
+        this.dataVenda = dataVenda,
         this.horaVenda = horaVenda
     }
 } 
