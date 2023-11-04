@@ -1,4 +1,4 @@
-export default class Vendadet{
+export default class VendaDetalhada{
     constructor(codVenda, codItem, codQuantidade, valorUnitario, totalBruto,valorDesconto,valorTotal){
         this.codVenda = codVenda,
         this.codItem = codItem,

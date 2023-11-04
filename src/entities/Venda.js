@@ -6,4 +6,4 @@ export default class Venda{
         this.dtVenda = dtVenda,
         this.horaVenda = horaVenda
     }
-}
+} 
