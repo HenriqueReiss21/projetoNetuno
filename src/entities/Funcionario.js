@@ -1,5 +1,5 @@
 export default class Funcionario{
-    constructor(codFuncionario, nome, cpf, rg, endereco, cep, cidade, estado, dataNascimento, dataCadastro, ativo, estadoCivil, numeroFilhos, pensao, funcao, setor, horario, salario, agencia, conta, cep, email){
+    constructor(codFuncionario, nome, cpf, rg, endereco, cep, cidade, estado, dataNascimento, dataCadastro, ativo, estadoCivil, numeroFilhos, pensao, funcao, setor, horario, salario, agencia, conta, email){
         this.codFuncionario = codFuncionario,
         this.nome = nome,
         this.cpf = cpf,
@@ -9,7 +9,7 @@ export default class Funcionario{
         this.cidade = cidade, 
         this.estado = estado,
         this.dataNascimento = dataNascimento,
-        this.Cadastro = dataCadastro,
+        this.dataCadastro = dataCadastro,
         this.ativo = ativo,
         this.estadoCivil = estadoCivil,
         this.numeroFilhos = numeroFilhos,
@@ -20,7 +20,6 @@ export default class Funcionario{
         this.salario = salario,
         this.agencia = agencia,
         this.conta = conta,
-        this.cep = cep,
         this.email = email
     }
 }
