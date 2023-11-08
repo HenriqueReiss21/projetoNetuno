@@ -1,0 +1,13 @@
+{
+  "name": "projetonenuto",
+  "version": "1.0.0",
+  "description": "Repositório destinado ao desenvolvimento do Projeto Integrador de Curso em Análise de Desenvolvimento de Sistemas.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
