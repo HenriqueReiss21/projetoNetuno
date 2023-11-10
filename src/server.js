@@ -1,5 +1,6 @@
 import express from 'express'
 import VendaRoutes from './routes/VendaRoutes.js'
+import VendaDetalhadaRoutes from './routes/VendaDetalhadaRoutes.js'
 import db from './database/config.js'
 
 
@@ -12,6 +13,10 @@ app.get('/healthcheck',(req,res)=>{
 
 const vendaRoutes = new VendaRoutes(db)
 app.use('/vendas',vendaRoutes.routes())
+
+const vendaDetalhadaRoutes = new VendaDetalhadaRoutes(db)
+app.use('/vendaDetalhada',vendaDetalhadaRoutes.routes())
+
 
 
 app.listen(3000,() => {
