@@ -1,6 +1,6 @@
 export default class VendaDetalhada{
-    constructor(codVenda, codItem, quantidade, valorUnitario, totalBruto,valorDesconto,valorTotal){
-        this.codVenda = codVenda,
+    constructor(id, codItem, quantidade, valorUnitario, totalBruto,valorDesconto,valorTotal){
+        this.id = id,
         this.codItem = codItem,
         this.quantidade = quantidade,
         this.valorUnitario = valorUnitario,
