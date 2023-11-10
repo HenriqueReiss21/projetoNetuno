@@ -39,7 +39,9 @@ export default class VendaRoutes{ //
         })
         
         router.delete('/:id',(req,res)=>{
-            const {id} = req.params    
+            const {id} = req.params
+            if(!id || id == "") return res.status(400).json({erro:'id obrigatório'})
+            
             const resultado = this.db.delete(Number(id))
             if(!resultado) res.status(404).json({erro: "Erro ao remover"})
 
