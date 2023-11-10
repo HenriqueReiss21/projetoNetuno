@@ -3,6 +3,7 @@ import VendaRoutes from './routes/VendaRoutes.js'
 import VendaDetalhadaRoutes from './routes/VendaDetalhadaRoutes.js'
 import ClienteRoutes from './routes/ClienteRoutes.js'
 import db from './database/config.js'
+import FuncionariosRoutes from './routes/FuncionarioRoutes.js'
 
 
 const app = express()
@@ -20,6 +21,9 @@ app.use('/vendaDetalhada',vendaDetalhadaRoutes.routes())
 
 const clienteRoutes = new ClienteRoutes(db)
 app.use('/clientes',clienteRoutes.routes())
+
+const funcionarioRoutes = new FuncionariosRoutes(db)
+app.use('/funcionarios',funcionarioRoutes.routes())
 
 app.listen(3000,() => {
     console.log('Server rodando na porta 3000')

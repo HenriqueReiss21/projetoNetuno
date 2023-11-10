@@ -1,6 +1,6 @@
 export default class Funcionario{
-    constructor(codFuncionario, nome, cpf, rg, endereco, cep, cidade, estado, dataNascimento, dataCadastro, ativo, estadoCivil, numeroFilhos, pensao, funcao, setor, horario, salario, agencia, conta, email){
-        this.codFuncionario = codFuncionario,
+    constructor(id, nome, cpf, rg, endereco, cep, cidade, estado, dataNascimento, dataCadastro, ativo, estadoCivil, numeroFilhos, pensao, funcao, setor, horario, salario, agencia, conta, email){
+        this.id = id,
         this.nome = nome,
         this.cpf = cpf,
         this.rg = rg
