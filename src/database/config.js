@@ -7,8 +7,7 @@ import VendaDetalhada from "../entities/VendaDetalhada.js"
 
 const db = {
     cliente: [
-        new Cliente(1,'46251021000180','SAAE','08007722195','R. Bernardino de Campos, 799 - Centro','Indaiatuba','SP','13330-260',
-        'ouvidoria@saae.sp.gov.br'),
+        new Cliente(1,'46251021000180','SAAE','08007722195','R. Bernardino de Campos, 799 - Centro','Indaiatuba','SP','13330-260','ouvidoria@saae.sp.gov.br'),
     ],
     funcionario: [
         new Funcionario(1,'João Caires','12827391212','128367128','Rua da Fortuna, Centro','13348725','Indaituba','SP','08/09/2004',
