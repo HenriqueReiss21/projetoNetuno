@@ -5,7 +5,8 @@ import ClienteRoutes from './routes/ClienteRoutes.js'
 import db from './database/config.js'
 import FuncionariosRoutes from './routes/FuncionarioRoutes.js'
 import ProdutoServicoRoutes from './routes/ProdutoServicoRoutes.js'
-
+import swaggerUi from "swagger-ui-express"
+import swaggerDocument from "./swagger/config.js"
 
 const app = express()
 app.use(express.json())
@@ -28,6 +29,10 @@ app.use('/funcionarios',funcionarioRoutes.routes())
 
 const produtoServicoRoutes = new ProdutoServicoRoutes(db)
 app.use('/produtoServicos',produtoServicoRoutes.routes())
+
+//Swagger
+app.use('/docs', swaggerUi.serve,
+swaggerUi.setup(swaggerDocument, { explorer: true }))
 
 app.listen(3000,() => {
     console.log('Server rodando na porta 3000')
