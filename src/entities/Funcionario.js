@@ -3,9 +3,9 @@ export default class Funcionario{
         this.id = id,
         this.nome = nome,
         this.cpf = cpf,
-        this.rg = rg
+        this.rg = rg,
         this.endereco = endereco,
-        this.cep = cep
+        this.cep = cep,
         this.cidade = cidade, 
         this.estado = estado,
         this.dataNascimento = dataNascimento,
