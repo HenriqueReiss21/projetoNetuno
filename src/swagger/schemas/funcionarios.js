@@ -109,7 +109,7 @@ export const Funcionario = {
     salario:1222.22,
     agencia:"1231231223-23",
     conta:"4325345435-2",
-    email:"elanputa@gmasiol.com",
+    email:"elan@gmail.com",
     },
     
  
