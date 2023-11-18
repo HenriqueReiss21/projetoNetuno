@@ -7,9 +7,12 @@ import FuncionariosRoutes from './routes/FuncionarioRoutes.js'
 import ProdutoServicoRoutes from './routes/ProdutoServicoRoutes.js'
 import swaggerUi from "swagger-ui-express"
 import swaggerDocument from "./swagger/config.js"
+import cors from 'cors'
 
 const app = express()
 app.use(express.json())
+
+app.use(cors())
 
 app.get('/healthcheck',(req,res)=>{
     res.send('OK!')
