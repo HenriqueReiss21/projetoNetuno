@@ -15,5 +15,4 @@ export default{
     '/clientes/{id}': getDeletePutClienteById,
     '/vendasDetalhadas': getPostVendasDetalhadas,
     '/vendasDetalhadas/{id}': getDeletePutVendaDetalhadaById
-
 }

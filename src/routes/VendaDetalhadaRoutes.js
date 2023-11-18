@@ -40,7 +40,6 @@ export default class VendaDetalhadaRoutes{ //
             res.json(venda)
         })
         
-        
         router.delete('/:id',(req,res)=>{
             const {id} = req.params
             if(!id || id == "") return res.status(400).json({erro:'código do id obrigatório'})

@@ -22,7 +22,7 @@ const vendaRoutes = new VendaRoutes(db)
 app.use('/vendas',vendaRoutes.routes())
 
 const vendaDetalhadaRoutes = new VendaDetalhadaRoutes(db)
-app.use('/vendaDetalhada',vendaDetalhadaRoutes.routes())
+app.use('/vendasDetalhadas',vendaDetalhadaRoutes.routes())
 
 const clienteRoutes = new ClienteRoutes(db)
 app.use('/clientes',clienteRoutes.routes())

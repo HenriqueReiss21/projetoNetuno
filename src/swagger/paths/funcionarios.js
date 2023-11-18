@@ -1,16 +1,16 @@
-export const getPostFuncionarios = { //swagger nesse contexto é uma prática
-    get: { // o que o get vai dar de resposta
+export const getPostFuncionarios = { 
+    get: { 
       description: "Retorna a lista de funcionários",
       tags: ["Funcionários"],
       responses: {
-        200: {//descrever cada resposta 
+        200: {
           description: "Lista de funcionários",
           content: {
             "application/json": {
               schema: {
                 type: "array",
                 items: {
-                  $ref: "#/schemas/Funcionario",//vai importar o Venda como esquema
+                  $ref: "#/schemas/Funcionario",
                 },
               },
             },
